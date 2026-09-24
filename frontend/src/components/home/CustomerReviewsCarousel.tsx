@@ -30,21 +30,21 @@ export const CustomerReviewsCarousel: React.FC = () => {
   ];
 
   return (
-    <section style={{ background: '#241c19', color: '#ffffff', padding: '60px 20px', margin: '70px 0 0 0' }}>
+    <section style={{ background: '#241c19', color: '#ffffff', padding: 'clamp(40px, 6vw, 60px) clamp(14px, 4vw, 20px)', margin: '40px 0 0 0' }}>
       <div style={{ maxWidth: '1280px', margin: '0 auto' }}>
-        <div style={{ textAlign: 'center', marginBottom: '40px' }}>
+        <div style={{ textAlign: 'center', marginBottom: '32px' }}>
           <span style={{ fontSize: '12px', fontWeight: '700', color: '#ffb300', textTransform: 'uppercase', letterSpacing: '1px' }}>
             Voice of Real Pickle Lovers
           </span>
-          <h2 style={{ fontSize: '32px', color: '#ffffff', marginTop: '6px' }}>
+          <h2 style={{ fontSize: 'clamp(24px, 5vw, 32px)', color: '#ffffff', marginTop: '6px' }}>
             Loved Across Indian Homes
           </h2>
         </div>
 
         <div style={{
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(300px, 1fr))',
-          gap: '24px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+          gap: '20px',
         }}>
           {reviews.map((rev) => (
             <div

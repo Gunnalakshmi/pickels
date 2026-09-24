@@ -26,17 +26,18 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
       <div style={{
         background: 'linear-gradient(90deg, #7f0000 0%, #b71c1c 50%, #e65100 100%)',
         color: '#ffffff',
-        padding: '6px 16px',
-        fontSize: '12px',
+        padding: '6px 12px',
+        fontSize: '11px',
         fontWeight: '500',
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',
-        gap: '16px',
+        gap: '12px',
+        textAlign: 'center',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
           <Sparkles size={13} color="#ffb300" />
-          <span><strong>100% Traditional Handcrafted Pickles</strong> with Cold-Pressed Virgin Oils</span>
+          <span><strong>100% Handcrafted Pickles</strong> with Cold-Pressed Virgin Oils</span>
         </div>
         <span style={{ opacity: 0.6 }} className="hidden-mobile">|</span>
         <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }} className="hidden-mobile">
@@ -46,58 +47,59 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
       </div>
 
       {/* Main Navigation Bar */}
-      <nav className="glass-header" style={{ padding: '14px 20px', transition: 'all 0.2s ease', background: 'rgba(255, 255, 255, 0.95)', borderBottom: '1px solid var(--border-subtle)' }}>
+      <nav className="glass-header" style={{ padding: '10px 16px', transition: 'all 0.2s ease', background: 'rgba(255, 255, 255, 0.96)', borderBottom: '1px solid var(--border-subtle)' }}>
         <div style={{
           maxWidth: '1280px',
           margin: '0 auto',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
-          gap: '20px',
+          gap: '12px',
         }}>
           {/* Logo & Brand Name: ASHOK PICKLES */}
           <div
             onClick={() => onNavigate('home')}
-            style={{ display: 'flex', alignItems: 'center', gap: '12px', cursor: 'pointer', userSelect: 'none' }}
+            style={{ display: 'flex', alignItems: 'center', gap: '10px', cursor: 'pointer', userSelect: 'none', flexShrink: 0 }}
           >
             <div style={{
-              width: '46px',
-              height: '46px',
-              borderRadius: '14px',
+              width: '40px',
+              height: '40px',
+              borderRadius: '12px',
               background: 'linear-gradient(135deg, #b71c1c 0%, #e65100 100%)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: '26px',
-              boxShadow: '0 4px 14px rgba(183, 28, 28, 0.35)',
+              fontSize: '22px',
+              boxShadow: '0 4px 12px rgba(183, 28, 28, 0.3)',
             }}>
               🌶️
             </div>
             <div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                 <span style={{
                   fontFamily: "'Playfair Display', serif",
-                  fontSize: '24px',
+                  fontSize: '20px',
                   fontWeight: '900',
-                  letterSpacing: '0.5px',
+                  letterSpacing: '0.3px',
                   color: '#b71c1c',
                   textTransform: 'uppercase',
+                  whiteSpace: 'nowrap',
                 }}>
                   ASHOK PICKLES
                 </span>
               </div>
-              <p style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '0.3px', marginTop: '-2px' }}>
+              <p className="desktop-only" style={{ fontSize: '11px', color: 'var(--text-muted)', fontWeight: '600', letterSpacing: '0.3px', marginTop: '-2px' }}>
                 Authentic Taste. Delivered To Your Door.
               </p>
             </div>
           </div>
 
-          {/* Location / Pincode Badge */}
+          {/* Location / Pincode Badge (Desktop only) */}
           <button
             type="button"
+            className="desktop-only"
             onClick={() => setPincodeModalOpen(true)}
             style={{
-              display: 'flex',
               alignItems: 'center',
               gap: '8px',
               padding: '8px 14px',
@@ -121,10 +123,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
           {/* Search Trigger Bar (Desktop) */}
           <div
             onClick={onOpenSearch}
+            className="desktop-only"
             style={{
               flex: '1',
               maxWidth: '460px',
-              display: 'flex',
               alignItems: 'center',
               gap: '12px',
               padding: '10px 18px',
@@ -142,11 +144,33 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
           </div>
 
           {/* Right Action Icons */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            {/* Wishlist */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', flexShrink: 0 }}>
+            {/* Mobile Search Button */}
+            <button
+              type="button"
+              onClick={onOpenSearch}
+              className="mobile-only"
+              style={{
+                width: '38px',
+                height: '38px',
+                borderRadius: '50%',
+                background: 'var(--bg-muted)',
+                color: 'var(--text-primary)',
+                border: '1px solid var(--border-subtle)',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: 'pointer',
+              }}
+              title="Search Pickles"
+            >
+              <Search size={18} color="var(--text-primary)" />
+            </button>
+
+            {/* Wishlist (Desktop only) */}
             <button
               type="button"
               onClick={() => onNavigate('wishlist')}
+              className="desktop-only"
               style={{
                 position: 'relative',
                 padding: '10px',
@@ -155,7 +179,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
                 color: currentPage === 'wishlist' ? 'var(--primary)' : 'var(--text-primary)',
                 border: 'none',
                 cursor: 'pointer',
-                display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
               }}
@@ -190,31 +213,31 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
               style={{
                 display: 'flex',
                 alignItems: 'center',
-                gap: '8px',
-                padding: '9px 18px',
+                gap: '6px',
+                padding: '8px 14px',
                 borderRadius: 'var(--radius-full)',
                 background: 'linear-gradient(135deg, #c62828 0%, #b71c1c 100%)',
                 color: '#ffffff',
                 fontWeight: '700',
-                fontSize: '14px',
+                fontSize: '13px',
                 border: 'none',
                 cursor: 'pointer',
                 boxShadow: 'var(--shadow-spice)',
               }}
             >
               <ShoppingBag size={18} />
-              <span>Cart</span>
+              <span className="desktop-only">Cart</span>
               {itemCount > 0 && (
                 <span style={{
                   background: '#ffffff',
                   color: 'var(--primary)',
                   borderRadius: '50%',
-                  width: '20px',
-                  height: '20px',
+                  width: '18px',
+                  height: '18px',
                   display: 'flex',
                   alignItems: 'center',
                   justifyContent: 'center',
-                  fontSize: '12px',
+                  fontSize: '11px',
                   fontWeight: '800',
                 }}>
                   {itemCount}
@@ -222,8 +245,8 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
               )}
             </button>
 
-            {/* User Account / Login Button */}
-            <div style={{ position: 'relative' }}>
+            {/* User Account / Login Button (Desktop only) */}
+            <div className="desktop-only" style={{ position: 'relative' }}>
               <button
                 type="button"
                 onClick={() => (user ? setIsUserMenuOpen(!isUserMenuOpen) : onNavigate('login'))}

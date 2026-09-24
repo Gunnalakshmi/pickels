@@ -3,18 +3,18 @@ import { ShieldCheck, Award, Truck, Lock, Phone, Mail, MapPin } from 'lucide-rea
 
 export const Footer: React.FC<{ onNavigate: (page: string, param?: string) => void }> = ({ onNavigate }) => {
   return (
-    <footer style={{ background: '#1c1412', color: '#ffffff', marginTop: '60px', borderTop: '4px solid #c62828' }}>
+    <footer style={{ background: '#1c1412', color: '#ffffff', marginTop: '40px', borderTop: '4px solid #c62828' }}>
       {/* Value Badges Banner */}
-      <div style={{ background: '#291e1a', borderBottom: '1px solid #3e2e28', padding: '30px 20px' }}>
+      <div style={{ background: '#291e1a', borderBottom: '1px solid #3e2e28', padding: '24px 16px' }}>
         <div style={{
           maxWidth: '1280px',
           margin: '0 auto',
           display: 'grid',
-          gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-          gap: '24px',
+          gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 200px), 1fr))',
+          gap: '20px',
         }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Award color="#ffb300" size={24} />
             </div>
             <div>
@@ -24,7 +24,7 @@ export const Footer: React.FC<{ onNavigate: (page: string, param?: string) => vo
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <ShieldCheck color="#4caf50" size={24} />
             </div>
             <div>
@@ -34,7 +34,7 @@ export const Footer: React.FC<{ onNavigate: (page: string, param?: string) => vo
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Truck color="#29b6f6" size={24} />
             </div>
             <div>
@@ -44,7 +44,7 @@ export const Footer: React.FC<{ onNavigate: (page: string, param?: string) => vo
           </div>
 
           <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
-            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+            <div style={{ width: '44px', height: '44px', borderRadius: '50%', background: '#3e2e28', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
               <Lock color="#ab47bc" size={24} />
             </div>
             <div>
@@ -56,7 +56,7 @@ export const Footer: React.FC<{ onNavigate: (page: string, param?: string) => vo
       </div>
 
       {/* Main Footer Links */}
-      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '50px 20px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '40px' }}>
+      <div style={{ maxWidth: '1280px', margin: '0 auto', padding: '40px 16px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 220px), 1fr))', gap: '32px' }}>
         {/* Col 1: Brand Info */}
         <div>
           <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '14px' }}>

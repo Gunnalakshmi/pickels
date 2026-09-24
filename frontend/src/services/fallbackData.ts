@@ -57,7 +57,7 @@ const rawVegItems: RawItem[] = [
     spice_level: 'extra-spicy',
     spice_rating: 5,
     prices: { 250: 160, 500: 300, 750: 440, 1000: 580 },
-    image: '/pickle_jar_hero.jpg',
+    image: 'https://images.unsplash.com/photo-1589301760014-d929f3979dbc?w=800&auto=format&fit=crop&q=80',
   },
   {
     id: 'prod_veg_02',
@@ -201,7 +201,7 @@ const rawVegItems: RawItem[] = [
     spice_level: 'spicy',
     spice_rating: 4,
     prices: { 250: 160, 500: 300, 750: 440, 1000: 580 },
-    image: '/pickle_jar_hero.jpg',
+    image: 'https://images.unsplash.com/photo-1596040033229-a9821ebd058d?w=800&auto=format&fit=crop&q=80',
   },
   {
     id: 'prod_veg_14',

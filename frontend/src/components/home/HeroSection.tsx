@@ -12,7 +12,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
       position: 'relative',
       background: 'linear-gradient(135deg, #241c19 0%, #1c1412 100%)',
       color: '#ffffff',
-      padding: '60px 20px 70px 20px',
+      padding: 'clamp(32px, 5vw, 60px) clamp(14px, 4vw, 24px) clamp(40px, 6vw, 70px) clamp(14px, 4vw, 24px)',
       overflow: 'hidden',
       borderBottom: '4px solid var(--primary)',
     }}>
@@ -42,8 +42,8 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
         maxWidth: '1280px',
         margin: '0 auto',
         display: 'grid',
-        gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))',
-        gap: '40px',
+        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 280px), 1fr))',
+        gap: '32px',
         alignItems: 'center',
         position: 'relative',
         zIndex: 2,
@@ -60,20 +60,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
             padding: '6px 14px',
             borderRadius: 'var(--radius-full)',
             color: '#ffb300',
-            fontSize: '13px',
+            fontSize: '12px',
             fontWeight: '700',
-            marginBottom: '20px',
+            marginBottom: '16px',
+            maxWidth: '100%',
           }}>
-            <Sparkles size={16} />
-            <span>Grandma's Heritage Stone-Pounded Pickles</span>
+            <Sparkles size={15} style={{ flexShrink: 0 }} />
+            <span style={{ whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>Heritage Stone-Pounded Pickles</span>
           </div>
 
           <h1 style={{
-            fontSize: 'clamp(2.4rem, 5vw, 3.6rem)',
-            lineHeight: '1.15',
+            fontSize: 'clamp(2.1rem, 5vw, 3.6rem)',
+            lineHeight: '1.18',
             fontWeight: '800',
             color: '#ffffff',
-            marginBottom: '18px',
+            marginBottom: '16px',
           }}>
             Authentic Indian Pickles <br />
             <span style={{
@@ -86,21 +87,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
           </h1>
 
           <p style={{
-            fontSize: '16px',
-            lineHeight: '1.7',
+            fontSize: '15px',
+            lineHeight: '1.65',
             color: '#d7ccc8',
             maxWidth: '520px',
-            marginBottom: '28px',
+            marginBottom: '26px',
           }}>
             Handcrafted with wood-pressed virgin sesame and mustard oils, sun-dried Guntur chillies, and traditional earthen maturation. 100% Homemade taste across India.
           </p>
 
           {/* Action Buttons */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', marginBottom: '36px' }}>
+          <div className="hero-cta-group">
             <button
               onClick={onShopNow}
               className="btn-primary"
-              style={{ padding: '14px 28px', fontSize: '15px' }}
+              style={{ padding: '13px 26px', fontSize: '15px' }}
             >
               <span>Shop Pickles</span>
               <ArrowRight size={18} />
@@ -109,7 +110,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
             <button
               onClick={onExploreCombos}
               style={{
-                padding: '13px 26px',
+                padding: '13px 24px',
                 borderRadius: 'var(--radius-full)',
                 border: '1.5px solid #ffb300',
                 color: '#ffb300',
@@ -131,21 +132,21 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
           <div style={{
             display: 'grid',
             gridTemplateColumns: 'repeat(3, 1fr)',
-            gap: '16px',
+            gap: '12px',
             borderTop: '1px solid rgba(255,255,255,0.12)',
-            paddingTop: '20px',
+            paddingTop: '18px',
           }}>
             <div>
-              <div style={{ fontSize: '22px', fontWeight: '800', color: '#ffb300' }}>100%</div>
-              <p style={{ fontSize: '12px', color: '#a1887f' }}>Homemade & Chemical-Free</p>
+              <div style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: '800', color: '#ffb300' }}>100%</div>
+              <p style={{ fontSize: '11px', color: '#a1887f' }}>Homemade & Pure</p>
             </div>
             <div>
-              <div style={{ fontSize: '22px', fontWeight: '800', color: '#a5d6a7' }}>FSSAI</div>
-              <p style={{ fontSize: '12px', color: '#a1887f' }}>Govt. Certified Safe</p>
+              <div style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: '800', color: '#a5d6a7' }}>FSSAI</div>
+              <p style={{ fontSize: '11px', color: '#a1887f' }}>Govt. Certified</p>
             </div>
             <div>
-              <div style={{ fontSize: '22px', fontWeight: '800', color: '#ff8a80' }}>50k+</div>
-              <p style={{ fontSize: '12px', color: '#a1887f' }}>Happy Pickle Lovers</p>
+              <div style={{ fontSize: 'clamp(18px, 4vw, 22px)', fontWeight: '800', color: '#ff8a80' }}>50k+</div>
+              <p style={{ fontSize: '11px', color: '#a1887f' }}>Pickle Lovers</p>
             </div>
           </div>
         </div>
@@ -154,7 +155,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
         <div style={{ position: 'relative' }}>
           <div style={{
             position: 'relative',
-            borderRadius: '24px',
+            borderRadius: '20px',
             overflow: 'hidden',
             boxShadow: '0 20px 50px rgba(0,0,0,0.6)',
             border: '2px solid rgba(255, 179, 0, 0.3)',
@@ -162,35 +163,36 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
             <img
               src="/pickle_jar_hero.jpg"
               alt="Authentic Indian Pickle Jar"
-              style={{ width: '100%', height: '420px', objectFit: 'cover' }}
+              style={{ width: '100%', height: 'clamp(230px, 45vw, 420px)', objectFit: 'cover' }}
             />
 
             {/* Floating Pickle Highlight Card */}
             <div style={{
               position: 'absolute',
-              bottom: '20px',
-              left: '20px',
-              right: '20px',
-              background: 'rgba(28, 20, 18, 0.88)',
+              bottom: '12px',
+              left: '12px',
+              right: '12px',
+              background: 'rgba(28, 20, 18, 0.92)',
               backdropFilter: 'blur(10px)',
-              borderRadius: '16px',
-              padding: '16px',
+              borderRadius: '14px',
+              padding: '12px 14px',
               border: '1px solid rgba(255, 255, 255, 0.15)',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
+              gap: '10px',
             }}>
               <div>
-                <span style={{ fontSize: '11px', fontWeight: '700', color: '#ffb300', textTransform: 'uppercase' }}>
+                <span style={{ fontSize: '10px', fontWeight: '700', color: '#ffb300', textTransform: 'uppercase' }}>
                   Andhra Avakaya & Gongura
                 </span>
-                <h4 style={{ fontSize: '15px', color: '#ffffff', marginTop: '2px' }}>
+                <h4 style={{ fontSize: '13px', color: '#ffffff', marginTop: '2px' }}>
                   Aromatic Wood-Pressed Sesame Tadka
                 </h4>
               </div>
-              <div style={{ textAlign: 'right' }}>
-                <span style={{ fontSize: '18px', fontWeight: '800', color: '#ff8a80' }}>From ₹160</span>
-                <span style={{ fontSize: '11px', color: '#a5d6a7', display: 'block' }}>Free Delivery ₹499+</span>
+              <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                <span style={{ fontSize: '16px', fontWeight: '800', color: '#ff8a80' }}>From ₹160</span>
+                <span style={{ fontSize: '10px', color: '#a5d6a7', display: 'block' }}>Free Delivery ₹499+</span>
               </div>
             </div>
           </div>

@@ -59,13 +59,13 @@ export const HomePage: React.FC<HomePageProps> = ({ onSelectProduct, onNavigate 
         id="pickle-catalog-section"
         style={{
           maxWidth: '1280px',
-          margin: '40px auto 0 auto',
-          padding: '0 20px',
+          margin: '32px auto 0 auto',
+          padding: '0 14px',
         }}
       >
         <div style={{ textAlign: 'center', marginBottom: '10px' }}>
           <span style={{
-            fontSize: '13px',
+            fontSize: '12px',
             fontWeight: '800',
             color: '#b71c1c',
             textTransform: 'uppercase',
@@ -75,14 +75,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onSelectProduct, onNavigate 
           </span>
           <h2 style={{
             fontFamily: "'Playfair Display', serif",
-            fontSize: '32px',
+            fontSize: 'clamp(22px, 5vw, 32px)',
             fontWeight: '900',
             color: 'var(--text-primary)',
             marginTop: '6px',
           }}>
             {dietarySelection === 'veg' ? '100% Vegetarian Pickles' : 'Authentic Non-Vegetarian Pickles'}
           </h2>
-          <p style={{ fontSize: '15px', color: 'var(--text-secondary)', marginTop: '4px', maxWidth: '600px', margin: '4px auto 0 auto' }}>
+          <p style={{ fontSize: '14px', color: 'var(--text-secondary)', marginTop: '4px', maxWidth: '600px', margin: '4px auto 0 auto' }}>
             {dietarySelection === 'veg'
               ? 'Handmade raw mango, gongura, amla, and country vegetable pickles steeped in cold-pressed virgin sesame oil.'
               : 'Slow-cooked juicy chicken, tender mutton, coastal prawns, and sea fish pickles in rich Guntur chilli spices.'}
