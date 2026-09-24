@@ -2,6 +2,12 @@
 
 > **Handcrafted Authentic Taste. Cold-Pressed Virgin Sesame & Mustard Oils. FSSAI Certified. Delivered To Your Door Across India.**
 
+### 🔗 Live Links:
+- 🌐 **Live Website**: [https://gunnalakshmi.github.io/pickels/](https://gunnalakshmi.github.io/pickels/)
+- 💻 **GitHub Repository**: [https://github.com/Gunnalakshmi/pickels](https://github.com/Gunnalakshmi/pickels)
+
+---
+
 ASHOK PICKLES is a dedicated, production-ready, mobile-first e-commerce web platform engineered for authentic Andhra and Telangana traditional handcrafted pickles (Achar, Pachadi). Featuring 30 authentic varieties (15 Vegetarian + 15 Non-Vegetarian) with bilingual English and Telugu script typography, real-time spice heat index, multi-variant weights (250g, 500g, 750g, 1kg), clean original pricing, dedicated sign-in experience, and responsive 4-column catalog.
 
 ---
