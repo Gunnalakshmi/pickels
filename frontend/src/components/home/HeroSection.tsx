@@ -161,7 +161,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
             border: '2px solid rgba(255, 179, 0, 0.3)',
           }}>
             <img
-              src="/pickle_jar_hero.jpg"
+              src={`${import.meta.env.BASE_URL}pickle_jar_hero.jpg`}
               alt="Authentic Indian Pickle Jar"
               style={{ width: '100%', height: 'clamp(230px, 45vw, 420px)', objectFit: 'cover' }}
             />
