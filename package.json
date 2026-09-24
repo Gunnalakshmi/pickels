@@ -1,0 +1,34 @@
+{
+  "name": "picklemart-india",
+  "version": "1.0.0",
+  "description": "Authentic Online Indian Pickle E-Commerce Platform",
+  "private": true,
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build:backend": "cd backend && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test:backend": "cd backend && npm test",
+    "seed": "cd backend && npm run seed"
+  },
+  "keywords": [
+    "pickle",
+    "ecommerce",
+    "india",
+    "achar",
+    "fssai",
+    "react",
+    "express",
+    "typescript"
+  ],
+  "author": "PickleMart India Team",
+  "license": "MIT",
+  "optionalDependencies": {
+    "@esbuild/win32-x64": "^0.28.2",
+    "@rollup/rollup-win32-x64-msvc": "^4.63.4"
+  }
+}
