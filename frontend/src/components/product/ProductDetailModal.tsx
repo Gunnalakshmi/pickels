@@ -6,6 +6,7 @@ import { useWishlist } from '../../context/WishlistContext';
 import { useLocation } from '../../context/LocationContext';
 import { useToast } from '../../context/ToastContext';
 import { api } from '../../services/api';
+import { resolveImageUrl } from '../../utils/imageUrl';
 
 interface ProductDetailModalProps {
   product: Product | null;
@@ -157,7 +158,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
                 border: '1px solid var(--border-subtle)',
               }}>
                 <img
-                  src={activeImage || product.primary_image}
+                  src={resolveImageUrl(activeImage || product.primary_image)}
                   alt={product.name}
                   style={{ width: '100%', height: '100%', objectFit: 'cover' }}
                 />
@@ -183,7 +184,7 @@ export const ProductDetailModal: React.FC<ProductDetailModalProps> = ({ product,
                         border: `2px solid ${activeImage === img.image_url ? 'var(--primary)' : 'var(--border-subtle)'}`,
                       }}
                     >
-                      <img src={img.image_url} alt="thumbnail" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                      <img src={resolveImageUrl(img.image_url)} alt="thumbnail" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                     </button>
                   ))}
                 </div>

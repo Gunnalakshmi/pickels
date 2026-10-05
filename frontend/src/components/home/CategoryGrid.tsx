@@ -1,6 +1,7 @@
 import React from 'react';
 import { Category } from '../../types';
 import { ArrowRight } from 'lucide-react';
+import { resolveImageUrl } from '../../utils/imageUrl';
 
 interface CategoryGridProps {
   categories: Category[];
@@ -62,7 +63,7 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({ categories, onSelect
               background: '#faf4ee',
             }}>
               <img
-                src={cat.image_url}
+                src={resolveImageUrl(cat.image_url)}
                 alt={cat.name}
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />

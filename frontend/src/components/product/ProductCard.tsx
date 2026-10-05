@@ -4,6 +4,8 @@ import { Product, ProductVariant } from '../../types';
 import { useCart } from '../../context/CartContext';
 import { useWishlist } from '../../context/WishlistContext';
 
+import { resolveImageUrl } from '../../utils/imageUrl';
+
 interface ProductCardProps {
   product: Product;
   onSelect: (product: Product) => void;
@@ -63,7 +65,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onSelect }) =
           ======================================================== */}
       <div style={{ position: 'relative', width: '100%', height: '160px', overflow: 'hidden', background: '#f5eee6' }}>
         <img
-          src={product.primary_image || (product.images && product.images[0]?.image_url) || `${import.meta.env.BASE_URL}pickle_jar_hero.jpg`}
+          src={resolveImageUrl(product.primary_image || (product.images && product.images[0]?.image_url))}
           alt={product.name}
           style={{
             width: '100%',

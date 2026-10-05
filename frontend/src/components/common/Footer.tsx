@@ -87,11 +87,13 @@ export const Footer: React.FC<{ onNavigate: (page: string, param?: string) => vo
             Authentic Specialities
           </h4>
           <ul style={{ listStyle: 'none', display: 'flex', flexDirection: 'column', gap: '10px', fontSize: '13px', color: '#b8a59f' }}>
-            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Avakaya (Mango Pickle) - ఆవకాయ</button></li>
-            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Gongura Pickle - గోంగూర పచ్చడి</button></li>
-            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Boneless Chicken Pickle - చికెన్ పచ్చడి</button></li>
-            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Tender Mutton Pickle - మటన్ పచ్చడి</button></li>
-            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>Coastal Prawn Pickle - రొయ్యల పచ్చడి</button></li>
+            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>ఏలకాయ పచ్చడి (Elakay Pachadi)</button></li>
+            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>బీరకాయ పచ్చడి (Beerakaya Pachadi)</button></li>
+            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>మునగ ఆకు పచ్చడి (Munaga Aaku Pachadi)</button></li>
+            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>కరివేపాకు పచ్చడి (Karivepaku Pachadi)</button></li>
+            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>కాకరకాయ పచ్చడి (Kakarakaya Pachadi)</button></li>
+            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>మామిడి పచ్చడి (Mamidi Pachadi)</button></li>
+            <li><button onClick={() => onNavigate('home')} style={{ color: 'inherit', background: 'none', border: 'none', cursor: 'pointer', textAlign: 'left', padding: 0 }}>చికెన్ పచ్చడి (Chicken Pachadi)</button></li>
           </ul>
         </div>
 

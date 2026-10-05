@@ -84,8 +84,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onSelectProduct, onNavigate 
           </h2>
           <p style={{ fontSize: '14px', color: 'var(--text-secondary)', marginTop: '4px', maxWidth: '600px', margin: '4px auto 0 auto' }}>
             {dietarySelection === 'veg'
-              ? 'Handmade raw mango, gongura, amla, and country vegetable pickles steeped in cold-pressed virgin sesame oil.'
-              : 'Slow-cooked juicy chicken, tender mutton, coastal prawns, and sea fish pickles in rich Guntur chilli spices.'}
+              ? 'Handmade Mamidi, Beerakaya, Munaga Aaku, Karivepaku, Kakarakaya and Elakay pachadi steeped in cold-pressed virgin sesame oil.'
+              : 'Slow-cooked succulent tender chicken pickle prepared in traditional fiery Telugu spices.'}
           </p>
         </div>
 
@@ -93,8 +93,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onSelectProduct, onNavigate 
         <VegNonVegToggle
           selected={dietarySelection}
           onChange={(type) => setDietarySelection(type)}
-          vegCount={vegProducts.length || 15}
-          nonVegCount={nonVegProducts.length || 15}
+          vegCount={vegProducts.length}
+          nonVegCount={nonVegProducts.length}
         />
 
         {/* 4-Column Responsive Grid */}
@@ -102,6 +102,24 @@ export const HomePage: React.FC<HomePageProps> = ({ onSelectProduct, onNavigate 
           <div style={{ textAlign: 'center', padding: '80px 20px', color: 'var(--text-muted)' }}>
             <Loader2 size={32} className="spin" style={{ margin: '0 auto 12px auto', color: 'var(--primary)' }} />
             <p style={{ fontWeight: '600' }}>Fetching freshly prepared pickles from our kitchen...</p>
+          </div>
+        ) : displayedProducts.length === 0 ? (
+          <div className="glass-card" style={{
+            padding: '60px 24px',
+            textAlign: 'center',
+            margin: '28px auto',
+            maxWidth: '560px',
+            background: 'var(--card-bg, #ffffff)',
+            borderRadius: '16px',
+            border: '1px dashed #d1c7bd',
+          }}>
+            <div style={{ fontSize: '48px', marginBottom: '14px' }}>🥒✨</div>
+            <h3 style={{ fontSize: '20px', fontWeight: '700', color: 'var(--text-primary)', marginBottom: '8px' }}>
+              Pickle Catalog Cleared
+            </h3>
+            <p style={{ fontSize: '14px', color: 'var(--text-secondary)', lineHeight: '1.6' }}>
+              All previous pickles have been removed. Ready and waiting for your new set of pickles to be added!
+            </p>
           </div>
         ) : (
           <div className="product-grid-4col" style={{ marginTop: '28px' }}>

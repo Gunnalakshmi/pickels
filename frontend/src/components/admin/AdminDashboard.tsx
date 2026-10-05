@@ -381,7 +381,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onExitAdmin, onV
                   {metrics.totalProductsSold || 48} Units
                 </div>
                 <span style={{ fontSize: '11px', color: 'var(--curry-green)', fontWeight: '600' }}>
-                  Avakaya & Gongura leading
+                  Mamidi & Chicken leading
                 </span>
               </div>
 
@@ -774,7 +774,7 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onExitAdmin, onV
                   required
                   value={productForm.name}
                   onChange={(e) => setProductForm({ ...productForm, name: e.target.value })}
-                  placeholder="e.g. Royal Hyderabadi Mutton Pickle"
+                  placeholder="e.g. చికెన్ పచ్చడి (Chicken Pachadi)"
                   style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid var(--border-medium)', fontSize: '13px' }}
                 />
               </div>
@@ -786,13 +786,8 @@ export const AdminDashboard: React.FC<AdminDashboardProps> = ({ onExitAdmin, onV
                   onChange={(e) => setProductForm({ ...productForm, categoryId: e.target.value })}
                   style={{ width: '100%', padding: '8px 12px', borderRadius: '6px', border: '1px solid var(--border-medium)', fontSize: '13px' }}
                 >
-                  <option value="cat_mango">Mango Pickle</option>
-                  <option value="cat_chicken">Chicken Pickle</option>
-                  <option value="cat_gongura">Gongura Pickle</option>
-                  <option value="cat_prawn">Prawn Pickle</option>
-                  <option value="cat_garlic">Garlic Pickle</option>
-                  <option value="cat_lemon">Lemon Pickle</option>
-                  <option value="cat_combos">Combo Packs</option>
+                  <option value="cat_veg">Vegetarian Pickles</option>
+                  <option value="cat_nonveg">Non-Vegetarian Pickles</option>
                 </select>
               </div>
 

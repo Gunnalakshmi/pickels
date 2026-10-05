@@ -16,14 +16,13 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
   const [loading, setLoading] = useState(false);
 
   const popularTags = [
-    { label: 'Andhra Avakaya', q: 'Avakaya' },
-    { label: 'Gongura Pachadi', q: 'Gongura' },
-    { label: 'Boneless Chicken', q: 'Chicken' },
-    { label: 'Coastal Prawns', q: 'Prawn' },
-    { label: 'Banarasi Chilli', q: 'Banarasi' },
-    { label: 'Desi Garlic', q: 'Garlic' },
-    { label: 'Sun Dried Lemon', q: 'Lemon' },
-    { label: 'Combo Boxes', q: 'Combo' },
+    { label: 'మామిడి పచ్చడి (Mamidi)', q: 'Mamidi' },
+    { label: 'చికెన్ పచ్చడి (Chicken)', q: 'Chicken' },
+    { label: 'బీరకాయ పచ్చడి (Beerakaya)', q: 'Beerakaya' },
+    { label: 'మునగ ఆకు పచ్చడి (Munaga)', q: 'Munaga' },
+    { label: 'కరివేపాకు పచ్చడి (Karivepaku)', q: 'Karivepaku' },
+    { label: 'కాకరకాయ పచ్చడి (Kakarakaya)', q: 'Kakarakaya' },
+    { label: 'ఏలకాయ పచ్చడి (Elakay)', q: 'Elakay' },
   ];
 
   useEffect(() => {
@@ -148,7 +147,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({ isOpen, onClose, onSel
           {!loading && query && results.length === 0 && (
             <div style={{ textAlign: 'center', padding: '40px 20px', color: 'var(--text-muted)' }}>
               <p style={{ fontSize: '16px', fontWeight: '600', color: 'var(--text-primary)' }}>No pickles found for "{query}"</p>
-              <p style={{ fontSize: '13px', marginTop: '4px' }}>Try searching for "Avakaya", "Chicken", "Garlic" or "Mango"</p>
+              <p style={{ fontSize: '13px', marginTop: '4px' }}>Try searching for "Mamidi", "Chicken", "Beerakaya" or "Karivepaku"</p>
             </div>
           )}
 

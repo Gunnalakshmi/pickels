@@ -139,7 +139,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onOpenSearch, onOpenAuth, onNavi
           >
             <Search size={18} color="var(--primary)" />
             <span style={{ color: 'var(--text-muted)', fontSize: '14px' }}>
-              Search Avakaya, Gongura, Chicken Pickle, Garlic...
+              Search Mamidi, Chicken, Karivepaku, Beerakaya Pachadi...
             </span>
           </div>
 

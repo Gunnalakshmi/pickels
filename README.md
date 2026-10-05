@@ -3,12 +3,12 @@
 > **Handcrafted Authentic Taste. Cold-Pressed Virgin Sesame & Mustard Oils. FSSAI Certified. Delivered To Your Door Across India.**
 
 ### 🔗 Live Links:
-- 🌐 **Live Website**: [https://gunnalakshmi.github.io/pickels/](https://gunnalakshmi.github.io/pickels/)
+- 🌐 **Live Website (GitHub Pages)**: [https://gunnalakshmi.github.io/pickels/](https://gunnalakshmi.github.io/pickels/)
 - 💻 **GitHub Repository**: [https://github.com/Gunnalakshmi/pickels](https://github.com/Gunnalakshmi/pickels)
 
 ---
 
-ASHOK PICKLES is a dedicated, production-ready, mobile-first e-commerce web platform engineered for authentic Andhra and Telangana traditional handcrafted pickles (Achar, Pachadi). Featuring 30 authentic varieties (15 Vegetarian + 15 Non-Vegetarian) with bilingual English and Telugu script typography, real-time spice heat index, multi-variant weights (250g, 500g, 750g, 1kg), clean original pricing, dedicated sign-in experience, and responsive 4-column catalog.
+ASHOK PICKLES is a dedicated, production-ready, mobile-first e-commerce web platform engineered for authentic Andhra and Telangana traditional handcrafted pickles (Achar, Pachadi). Featuring the signature 7 handcrafted pickle varieties with bilingual English and Telugu script typography, high-definition jar photography, real-time spice heat index, multi-variant weights (250g, 500g, 750g, 1kg), clean original pricing, dedicated sign-in experience, and responsive 4-column catalog.
 
 ---
 
@@ -28,16 +28,21 @@ graph TD
 
 ## 🚀 Key Features
 
-### 🛒 Customer Storefront
-- **30 Authentic Pickle Varieties**:
-  - **15 Vegetarian Pickles**: Avakaya (ఆవకాయ), Gongura Pachadi (గోంగూర పచ్చడి), Magaya (మాగాయ), Dosakaya (దోసకాయ పచ్చడి), Gongura Garlic (గోంగూర వెల్లుల్లి), Lemon (నిమ్మకాయ), Amla (ఉసిరికాయ), Green Chilli (పచ్చిమిరపకాయ), Pandu Mirapakaya (పండు మిరపకాయ), Tomato (టమాటా), Tamarind (చింతకాయ), Garlic (వెల్లుల్లి), Mango Thokku (మామిడికాయ తొక్కు), Brinjal (వంకాయ), Dondakaya (దొండకాయ).
-  - **15 Non-Vegetarian Pickles**: Chicken Pickle (చికెన్ పచ్చడి), Mutton Pickle (మటన్ పచ్చడి), Prawn Pickle (రొయ్యల పచ్చడి), Fish Pickle (చేపల పచ్చడి), Chicken Gongura (చికెన్ గోంగూర), Mutton Gongura (మటన్ గోంగూర), Gongura Prawn (గోంగూర రొయ్యల), Chicken Garlic (చికెన్ వెల్లుల్లి), Mutton Garlic (మటన్ వెల్లుల్లి), Garlic Prawn (వెల్లుల్లి రొయ్యల), Gongura Fish (గోంగూర చేపల), Dry Fish (ఎండు చేపల), Dry Prawn (ఎండు రొయ్యల), Crab Pickle (పీతల పచ్చడి), Chicken Liver Pickle (చికెన్ లివర్).
-- **Interactive Veg / Non-Veg Toggle**: Filter easily between 100% Vegetarian and Authentic Non-Vegetarian specialties.
+### 🛒 Handcrafted Pickle Catalog (7 Signature Varieties)
+1. **ఏలకాయ పచ్చడి (Elakay Pachadi)** — Rare cardamom pod delicacy crafted with cold-pressed oil & stone-ground spices.
+2. **బీరకాయ పచ్చడి (Beerakaya Pachadi)** — Traditional Andhra ridge gourd peel roasted with green chillies & roasted sesame.
+3. **మునగ ఆకు పచ్చడి (Munaga Aaku Pachadi)** — Nutrient-dense moringa leaf pachadi packed with iron and roasted lentils.
+4. **కరివేపాకు పచ్చడి (Karivepaku Pachadi)** — Fresh curry leaves roasted with black gram, red chillies & tamarind.
+5. **కాకరకాయ పచ్చడి (Kakarakaya Pachadi)** — Crispy bitter gourd slow-roasted to balance bitterness with tangy spices.
+6. **మామిడి పచ్చడి (Mamidi Pachadi)** — Classic Andhra raw mango pachadi with stone-ground mustard & sun-ripened red chillies.
+7. **చికెన్ పచ్చడి (Chicken Pachadi)** — Boneless country chicken simmered in rich Telugu spice gravy with aromatic cloves.
+
+- **Interactive Veg / Non-Veg Toggle**: Filter easily between 6 Vegetarian and 1 Authentic Non-Vegetarian specialty.
 - **4 Selectable Weight Packs**: 250g, 500g, 750g, and 1kg with live pricing updates.
 - **Spice Heat Rating**: Out of 5 with visual red chilli indicators (`🌶️🌶️🌶️🌶️🌶️`).
 - **Dedicated Sign-In Interface**: Clean, professional login page without demo clutter.
 - **Serviceable Indian PIN Code Checker**: Live verification across India with free delivery above ₹499.
-- **Universal Static Hosting Support**: Works seamlessly both locally with Express backend and globally as a static website on GitHub Pages / Vercel.
+- **Universal Static Hosting Support**: Works seamlessly both locally with Express backend and globally as a static website on GitHub Pages.
 
 ---
 

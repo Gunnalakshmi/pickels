@@ -3,6 +3,7 @@ import { CheckCircle2, Clock, Truck, PackageCheck, AlertCircle, ArrowLeft, Print
 import { Order, InvoiceDetails } from '../../types';
 import { api } from '../../services/api';
 import { useToast } from '../../context/ToastContext';
+import { resolveImageUrl } from '../../utils/imageUrl';
 
 interface OrderTrackingPageProps {
   orderId: string;
@@ -246,7 +247,7 @@ export const OrderTrackingPage: React.FC<OrderTrackingPageProps> = ({ orderId, o
             {order.items?.map((item) => (
               <div key={item.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '12px', background: '#fff', borderRadius: '8px', border: '1px solid var(--border-subtle)' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
-                  {item.image && <img src={item.image} alt={item.product_name} style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }} />}
+                  {item.image && <img src={resolveImageUrl(item.image)} alt={item.product_name} style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }} />}
                   <div>
                     <h5 style={{ fontSize: '14px', color: 'var(--text-primary)' }}>{item.product_name}</h5>
                     <p style={{ fontSize: '12px', color: 'var(--text-muted)' }}>

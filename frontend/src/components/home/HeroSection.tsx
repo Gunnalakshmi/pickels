@@ -184,7 +184,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onShopNow, onExploreCo
             }}>
               <div>
                 <span style={{ fontSize: '10px', fontWeight: '700', color: '#ffb300', textTransform: 'uppercase' }}>
-                  Andhra Avakaya & Gongura
+                  మామిడి & చికెన్ పచ్చడి (Mamidi & Chicken Pachadi)
                 </span>
                 <h4 style={{ fontSize: '13px', color: '#ffffff', marginTop: '2px' }}>
                   Aromatic Wood-Pressed Sesame Tadka

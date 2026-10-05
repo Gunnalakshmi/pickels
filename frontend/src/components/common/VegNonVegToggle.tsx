@@ -10,8 +10,8 @@ interface VegNonVegToggleProps {
 export const VegNonVegToggle: React.FC<VegNonVegToggleProps> = ({
   selected,
   onChange,
-  vegCount = 15,
-  nonVegCount = 15,
+  vegCount = 0,
+  nonVegCount = 0,
 }) => {
   return (
     <div style={{ display: 'flex', justifyContent: 'center', margin: '30px 0 20px 0' }}>

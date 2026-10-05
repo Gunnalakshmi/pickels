@@ -7,6 +7,7 @@ import { useLocation } from '../../context/LocationContext';
 import { useToast } from '../../context/ToastContext';
 import { Address } from '../../types';
 import { api } from '../../services/api';
+import { resolveImageUrl } from '../../utils/imageUrl';
 
 interface CheckoutPageProps {
   onBackToCart: () => void;
@@ -439,7 +440,7 @@ export const CheckoutPage: React.FC<CheckoutPageProps> = ({ onBackToCart, onOrde
                 {items.map(item => (
                   <div key={item.id} style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px', background: '#fff', borderRadius: '8px', border: '1px solid var(--border-subtle)' }}>
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-                      <img src={item.image} alt={item.productName} style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }} />
+                      <img src={resolveImageUrl(item.image)} alt={item.productName} style={{ width: '48px', height: '48px', objectFit: 'cover', borderRadius: '6px' }} />
                       <div>
                         <h5 style={{ fontSize: '13px', color: 'var(--text-primary)' }}>{item.productName}</h5>
                         <span style={{ fontSize: '11px', color: 'var(--text-muted)' }}>Pack: {item.weightLabel} | Qty: {item.quantity}</span>
